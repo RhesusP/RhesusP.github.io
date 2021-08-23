@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+        <title>IP Address Tracker</title>
+    </head>
+
+    <body>
+        <div id="background">
+            <h2 class="title is-2" style="color: white; font-weight: 700; margin: 2%;">IP Address Tracker</h2>
+            <div id="search-field">
+                <input id="search-input" class="input" placeholder="Search for any IP address or domain">
+                <button id="search-button" class="button is-black" onclick="getDetails()">
+                    <span class="icon">
+                        <img src="./images/icon-arrow.svg">
+                    </span>
+                </button>
+            </div>
+
+            <div id="details" class="box">
+                <div class="columns">
+                    <div class="column">
+                        <h6 class="subtitle is-6">IP Address</h6>
+                        <p id="ip_address" class="details-text"></p>
+                    </div>
+    
+                    <div class="column">
+                        <h6 class="subtitle is-6">Location</h6>
+                        <p id="location" class="details-text"></p>
+                        <p id="postal_code" class="details-text"></p>
+                    </div>
+    
+                    <div class="column">
+                        <h6 class="subtitle is-6">Timezone</h6>
+                        <p id="timezone" class="details-text"></p>
+                    </div>
+    
+                    <div class="column">
+                        <h6 class="subtitle is-6">ISP</h6>
+                        <p id="isp" class="details-text"></p>
+                        <p id="name" class="details-text"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="map"></div>
+
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+       
+</html>
