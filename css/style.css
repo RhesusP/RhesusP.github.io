@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(../fonts/SourceCodePro-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("../assets/img/blured_setup.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.is-1{
+    color: white;
+}
+
+#home{
+    min-height: 100vh;
+    /*background-image: url("../assets/img/blured_setup.jpg");
+    background-size: cover;*/
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 35vh;
+}
+
+.typing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+#sentence{
+    font-family: "Source Code Pro";
+}
+
+.input-cursor{
+    display: inline-block;
+    width: 4px;
+    height: 1.1em;
+    background-color: white;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#arrow-down{
+    bottom: 5%;
+    display: flex;
+    position: absolute;
+}
+
+#arrow-down > a{
+    color: white;
+}
+
+#skills{
+    min-height: 100vh;
+    /*background-color: lightblue;*/
+    padding: 2%;
+}
+
+#software-skills{
+    /*min-height: 100%;*/
+}
+
+
+#resume{
+    min-height: 100vh;
+    /*background-color: lightgray;*/
+    padding: 2%;
+}
+
+#portfolio{
+    min-height: 100vh;
+    /*background-color: bisque;*/
+    padding: 2%;
+}
+
+.progress{
+    margin: auto;
+}
+
+.skill > .icon{
+    margin-right: 2%;
+}
+
+.skill{
+    display: flex;
+}
+
+.skills-chart{
+    padding: 10px;
+    padding-top: 30px;
+    position: relative;
+}
+.horizontal{
+    /*margin-bottom: 10px;*/
+    display: flex;
+    align-items: center;
+}
+
+.vertical-layer{
+    position: absolute;
+    top: 0;
+    left: 8%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vertical .line{
+    width: 2px;
+    height: 100%;
+    background: blue;
+    display: block;
+    border: none;
+}
+
+.timeline-marker{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+.card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+code{
+    background: none;
+    color: white;
+}
+
+.card-position{
+    display: flex;
+}
+
+.card-footer{
+    padding-top: 2%;
+
+}
+
+button:hover{
+    background-color: black;    
+}
+
+button:hover > a > span{
+    color: white;
+}
+
+button > a:visited{
+    color: black;
+}
