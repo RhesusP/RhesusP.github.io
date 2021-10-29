@@ -18,6 +18,10 @@ body{
     color: white;
 }
 
+.is-3{
+    color: white;
+}
+
 #home{
     min-height: 100vh;
     /*background-image: url("../assets/img/blured_setup.jpg");
